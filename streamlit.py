@@ -24,7 +24,7 @@ df
 left_column, right_column = st.columns(2)
 pressed = left_column.button('Press me?')
 if pressed:
-  right_column.write("Woohoo!")
+    right_column.write("Woohoo!")
 
 map_data = pd.DataFrame(
     np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
