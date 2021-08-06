@@ -9,6 +9,9 @@ text = """
 """
 text
 
+expander = st.expander("FAQ")
+expander.write("Demo app...")
+
 uploaded_file = st.file_uploader("Choose a file to upload")
 
 #dataframe = pd.read_csv(uploaded_file)
@@ -20,11 +23,6 @@ df = pd.DataFrame({
 })
 
 df
-
-left_column, right_column = st.columns(2)
-pressed = left_column.button('Press me?')
-if pressed:
-    right_column.write("Woohoo!")
 
 map_data = pd.DataFrame(
     np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
