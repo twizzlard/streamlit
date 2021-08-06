@@ -11,8 +11,13 @@ text
 
 st.checkbox('Show')
 
+left_column, right_column = st.columns(2)
+pressed = left_column.button('Press me?')
+if pressed:
+  right_column.write("Woohoo!")
+
 expander = st.expander("FAQ")
-expander.write("Demo app...")
+expander.write("Here you could put in some really, really long explanations...")
 
 uploaded_file = st.file_uploader("Choose a file to upload")
 
