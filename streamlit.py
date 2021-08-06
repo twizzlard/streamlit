@@ -9,6 +9,8 @@ text = """
 """
 text
 
+st.checkbox('Show')
+
 expander = st.expander("FAQ")
 expander.write("Demo app...")
 
