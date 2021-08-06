@@ -4,10 +4,12 @@ import numpy as np
 
 text = """
 # Sample Web App
+
+
 """
 text
 
-uploaded_file = st.file_uploader("Choose a file")
+uploaded_file = st.file_uploader("Choose a file to upload")
 
 dataframe = pd.read_csv(uploaded_file)
 st.write(dataframe)
