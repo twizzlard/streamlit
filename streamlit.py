@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 text = """
-# Sample Web App
+# Very Basic Web App
 
 
 """
@@ -33,5 +33,5 @@ map_data = pd.DataFrame(
     np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
     columns=['lat', 'lon'])
 
-if st.checkbox('Show'):
+if st.checkbox('Show map data'):
   st.map(map_data)
