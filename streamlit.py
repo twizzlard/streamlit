@@ -3,11 +3,14 @@ import pandas as pd
 import numpy as np
 
 text = """
-# My second app
-Hello *world!*
+# Sample Web App
 """
-
 text
+
+uploaded_file = st.file_uploader("Choose a file")
+
+dataframe = pd.read_csv(uploaded_file)
+st.write(dataframe)
 
 df = pd.DataFrame({
   'first column': [1, 2, 3, 4],
