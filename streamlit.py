@@ -22,7 +22,7 @@ df = pd.DataFrame({
 df
 
 map_data = pd.DataFrame(
-    np.random.randn(1000, 2) / [50, 50] + [50, 50],
+    np.random.randn(1000, 2) / [50, 50] + [73, -122],
     columns=['lat', 'lon'])
 
 st.map(map_data)
