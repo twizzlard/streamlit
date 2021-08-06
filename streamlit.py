@@ -1,10 +1,12 @@
 import streamlit as st
 import pandas as pd
 
-st.write("""
+text = """
 # My second app
 Hello *world!*
-""")
+"""
+
+text
 
 df = pd.DataFrame({
   'first column': [1, 2, 3, 4],
