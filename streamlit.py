@@ -19,8 +19,15 @@ text
 
 uploaded_file = st.file_uploader("Choose a file to upload")
 
-dataframe = pd.read_csv(uploaded_file)
-dataframe.head()
+try:
+  dataframe = pd.read_csv(uploaded_file)
+  dataframe.head()
+except:
+  try:
+    dataframe = pd.read_excel(uploaded_file)
+    dataframe.head()
+  except:
+    continue
 
 df = pd.DataFrame({
   'first column': [1, 2, 3, 4],
