@@ -27,7 +27,7 @@ except:
     dataframe = pd.read_excel(uploaded_file)
     dataframe.head()
   except:
-    continue
+    print('No file')
 
 df = pd.DataFrame({
   'first column': [1, 2, 3, 4],
