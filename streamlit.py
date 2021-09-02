@@ -21,11 +21,11 @@ uploaded_file = st.file_uploader("Choose a file to upload")
 
 try:
   dataframe = pd.read_csv(uploaded_file)
-  dataframe.head()
+  dataframe
 except:
   try:
     dataframe = pd.read_excel(uploaded_file)
-    dataframe.head()
+    dataframe
   except:
     print('No file')
 
